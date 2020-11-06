@@ -27,7 +27,6 @@
 #include <linux/uaccess.h>
 #include <linux/dma-buf.h>
 #include <linux/kref.h>
-#include <linux/rtmm.h>
 
 #include <soc/qcom/scm.h>
 #include <asm/cacheflush.h>
