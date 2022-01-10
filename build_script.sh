@@ -139,12 +139,6 @@ packingkernel() {
         rm -rf "${ANYKERNEL}"
     fi
     git clone "$ANYKERNEL_REPO" -b "$ANYKERNEL_BRANCH" "${ANYKERNEL}"
-    if ! [ -f "${KERN_IMG}" ]; then
-        build_failed
-    fi
-    if ! [ -f "${KERN_DTB}" ]; then
-        build_failed
-    fi
     if [[ "${DTB_TYPE}" =~ "single" ]]; then
         cp "${KERN_IMG}" "${ANYKERNEL}"/Image.gz-dtb
     else
