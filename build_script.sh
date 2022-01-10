@@ -6,10 +6,10 @@
 # Init
 KERNEL_DIR="${PWD}"
 cd "$KERNEL_DIR" || exit
-DTB_TYPE="" # define as "single" if want use single file
-KERN_IMG="${KERNEL_DIR}"/out/arch/arm64/boot/Image.gz   # if use single file define as Image.gz-dtb instead
-KERN_DTB="${KERNEL_DIR}"/out/arch/arm64/boot/dtbo.img       # and comment this variable
-DTB_2="${KERNEL_DIR}"/out/arch/arm64/boot/dts/qcom/cust-atoll-ab.dtb
+DTB_TYPE="single" # define as "single" if want use single file
+KERN_IMG="${KERNEL_DIR}"/out/arch/arm64/boot/Image.gz-dtb   # if use single file define as Image.gz-dtb instead
+# KERN_DTB="${KERNEL_DIR}"/out/arch/arm64/boot/dtbo.img       # and comment this variable
+# DTB_2="${KERNEL_DIR}"/out/arch/arm64/boot/dts/qcom/cust-atoll-ab.dtb
 ANYKERNEL="${HOME}"/anykernel
 LOGS="${HOME}"/${CHEAD}.log
 
