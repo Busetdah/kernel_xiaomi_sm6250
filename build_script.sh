@@ -29,7 +29,7 @@ LOGS_URL="[See Drone CI Build Logs Here](https://cloud.drone.io/silont-project/k
 mkdir -p "/mnt/workdir/silont-clang"
 COMP_TYPE="clang" # unset if want to use gcc as compiler
 CLANG_DIR="/mnt/workdir/silont-clang"
-CLANG_URL="https://github.com/silont-project/silont-clang/archive/20210117.tar.gz"
+CLANG_URL="https://github.com/kdrag0n/proton-clang/archive/refs/tags/20210522.zip"
 GCC_DIR="" # Doesn't needed if use proton-clang
 GCC32_DIR="" # Doesn't needed if use proton-clang
 CLANG_FILE="/mnt/workdir/clang.tar.gz"
