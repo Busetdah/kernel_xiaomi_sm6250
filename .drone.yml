@@ -11,6 +11,6 @@ steps:
       CHANNEL_ID:
         from_secret: CHATID
     commands: 
-      - "pacman -Sy cpio && bash build_script.sh"
+      - "pacman -Sy cpio python && bash build_script.sh"
     image: azrim89/kernel:latest
     name: Build
